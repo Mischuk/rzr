@@ -1,0 +1,72 @@
+.m_contacts
+  article
+    margin-top 15px
+    p
+      margin 0
+  .form-row
+    margin-bottom 10px
+    &:last-child
+      margin-bottom 30px
+    > label
+      display block
+      width 100%
+  form
+    width 740px
+    margin-top 30px
+    @media screen and (max-width: 767px)
+      width 100%
+    label
+      clearfix()
+      > .label,
+      > .input
+        float left
+        height 30px
+        line-height 30px
+      > .label
+        font-size 16px
+        width 125px
+        @media screen and (max-width: 767px)
+          width 100%
+        &.large
+          width 230px
+      > .label.large + .captcha
+        width 200px
+      > .input
+        width 615px
+        @media screen and (max-width: 767px)
+          width 100%
+        &.large
+          height 205px
+      textarea
+        height 205px
+        width 100%
+        resize none
+        padding 5px 10px
+      .captcha
+        height auto
+        .captcha-image
+          border 1px solid #84838a
+          background lightgray
+          width 120px
+          height 30px
+          margin-bottom 5px
+        .captcha-input
+          input
+            width 120px
+    input
+      myriad()
+      width 100%
+      height 30px
+      line-height 30px
+      border 1px solid #84838a
+      background #fff
+      padding-left 10px
+      padding-right 10px
+      font-size 16px
+    .submit
+      margin-left auto
+      margin-right auto
+      margin-top 15px
+      margin-left 230px
+      @media screen and (max-width: 767px)
+        margin-left auto

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<title>Галерея (Фото)</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-tap-highlight" content="no">
+		<link type="image/x-icon" href="favicon.ico" rel="icon">
+		<link href="assets/stylesheets/plugins.min.css" rel="stylesheet">
+		<link href="assets/stylesheets/app.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- Layout-->
+		<div class="background-layout"></div>
+		<!-- Modals-->
+		<div class="zoom-anim-dialog mfp-hide modal" id="small-dialog">
+			<div class="title">Чтобы оставить комментарий, авторизуйтесь через соц. сети</div>
+			<div class="buttons">
+				<div class="vk">
+					<a class="login-modal" href="#"></a>
+				</div>
+				<div class="fb">
+					<a class="login-modal" href="#"></a>
+				</div>
+				<div class="ok">
+					<a class="login-modal" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<a class="popup-with-zoom-anim" id="second-step" href="#small-dialog-second"></a>
+		<div class="zoom-anim-dialog mfp-hide modal" id="small-dialog-second">
+			<div class="title">Авторизация</div>
+			<form id="auth-form">
+				<label>
+					<span class="label">Логин
+						<span class="required">*</span>:</span>
+					<div class="input">
+						<input class="text" type="text" placeholder required>
+					</div>
+				</label>
+				<label>
+					<span class="label">Пароль
+						<span class="required">*</span>:</span>
+					<div class="input">
+						<input class="text" type="password" placeholder required>
+					</div>
+				</label>
+				<div class="submit">
+					<button type="submit">Войти</button>
+				</div>
+			</form>
+		</div>
+		<a class="popup-with-zoom-anim" id="third-step" href="#small-dialog-success"></a>
+		<div class="zoom-anim-dialog mfp-hide modal" id="small-dialog-success">
+			<div class="title">Спасибо!</div>
+			<div class="paragraph">Вы успешно прошли авторизацию. Теперь вы можете оставлять комментарии, делиться вашими идеями и создавать темы на нашем форуме.</div>
+			<div class="submit">
+				<button class="close-modal" type="button">ОК</button>
+			</div>
+		</div>
+		<!-- end Modals-->
+		<!-- Header-->
+		<header class="m_header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-3">
+						<div class="logo">
+							<a href="#"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="mobile-menu-trigger">
+							<span></span>
+						</div>
+						<div class="singin">
+							<a class="popup-with-zoom-anim" href="#small-dialog">Войти</a>
+						</div>
+						<div class="socials">
+							<div class="buttons">
+								<a class="facebook" href="#"></a>
+								<a class="vk" href="#"></a>
+								<a class="twitter" href="#"></a>
+								<a class="instagram" href="#"></a>
+								<a class="youtube" href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="menu">
+							<li>
+								<a href="#">RZR Camp 2016</a>
+							</li>
+							<li>
+								<a href="#">Новости</a>
+							</li>
+							<li>
+								<a href="#">Галерея</a>
+							</li>
+							<li>
+								<a href="#">История</a>
+							</li>
+							<li>
+								<a href="#">Партнеры</a>
+							</li>
+							<li>
+								<a href="#">Форум</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+							<li class="signup">
+								<a href="#">Зарегистрироваться на II этап</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<!-- Breadcrumbs-->
+						<div class="m_breadcrumbs">
+							<ul>
+								<li>
+									<a href="#">Галерея</a>
+								</li>
+								<li>
+									<a href="#">Фотогалерея</a>
+								</li>
+								<li>
+									<a href="#">RZR CAMP 2016 I этап Москва, 28-29 мая, Side-by-Side</a>
+								</li>
+							</ul>
+						</div>
+						<!-- Блок «Поделиться» для соц. кнопок в галерее-->
+						<!-- https://tech.yandex.ru/share/-->
+						<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+						<script src="//yastatic.net/share2/share.js"></script>
+						<!-- Gallery-->
+						<div class="m_gallery">
+							<form class="m_search-page">
+								<input class="text" type="text" placeholder="Поиск по номеру">
+								<button class="submit" type="submit"></button>
+							</form>
+							<div class="page-title">Фотогалерея</div>
+							<div class="gallery-title">RZR CAMP 2016 I этап Москва, 28-29 мая, Side-by-Side</div>
+							<div id="caption" style="display: none">
+								<div class="share">
+									<span>Поделиться:</span>
+									<div class="ya-share2" data-services="vkontakte,facebook,twitter" data-counter></div>
+								</div>
+								<div class="socials">
+									<div class="title">Мы в соц. сетях:</div>
+									<div class="buttons">
+										<a class="facebook" href="#"></a>
+										<a class="vk" href="#"></a>
+										<a class="twitter" href="#"></a>
+										<a class="instagram" href="#"></a>
+										<a class="youtube" href="#"></a>
+									</div>
+								</div>
+							</div>
+							<div class="list-images" id="lightgallery">
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/1.png">
+										<div class="image" style="background-image: url('assets/images/gallery/1.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/2.png">
+										<div class="image" style="background-image: url('assets/images/gallery/2.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/1.png">
+										<div class="image" style="background-image: url('assets/images/gallery/1.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/3.png">
+										<div class="image" style="background-image: url('assets/images/gallery/3.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/2.png">
+										<div class="image" style="background-image: url('assets/images/gallery/2.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/1.png">
+										<div class="image" style="background-image: url('assets/images/gallery/1.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/2.png">
+										<div class="image" style="background-image: url('assets/images/gallery/2.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/3.png">
+										<div class="image" style="background-image: url('assets/images/gallery/3.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/2.png">
+										<div class="image" style="background-image: url('assets/images/gallery/2.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/3.png">
+										<div class="image" style="background-image: url('assets/images/gallery/3.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/1.png">
+										<div class="image" style="background-image: url('assets/images/gallery/1.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/2.png">
+										<div class="image" style="background-image: url('assets/images/gallery/2.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/3.png">
+										<div class="image" style="background-image: url('assets/images/gallery/3.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/2.png">
+										<div class="image" style="background-image: url('assets/images/gallery/2.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/3.png">
+										<div class="image" style="background-image: url('assets/images/gallery/3.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/1.png">
+										<div class="image" style="background-image: url('assets/images/gallery/1.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/2.png">
+										<div class="image" style="background-image: url('assets/images/gallery/2.png')"></div>
+									</a>
+								</div>
+								<div class="item">
+									<a data-sub-html="#caption" href="assets/images/gallery/1.png">
+										<div class="image" style="background-image: url('assets/images/gallery/1.png')"></div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer-->
+		<footer class="m_footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-8">
+						<div class="menu">
+							<ul>
+								<li>
+									<a href="#">RZR Camp 2016</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+								<li>
+									<a href="#">Галерея</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="#">История</a>
+								</li>
+								<li>
+									<a href="#">Партнеры</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+								<li>
+									<a href="#">Форум</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-4">
+						<div class="logo">
+							<a href="#"></a>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<div class="socials">
+							<div class="title">Мы в социальных сетях</div>
+							<div class="buttons">
+								<a class="facebook" href="#"></a>
+								<a class="vk" href="#"></a>
+								<a class="twitter" href="#"></a>
+								<a class="instagram" href="#"></a>
+								<a class="youtube" href="#"></a>
+							</div>
+						</div>
+						<div class="official">Brandt официальныцй дилер
+							<br>Polaris, KLIM, Indian, Victory</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- JS-->
+		<script src="assets/javascripts/jquery.min.js"></script>
+		<script src="assets/javascripts/plugins.min.js"></script>
+		<script src="assets/javascripts/app.min.js"></script>
+	</body>
+
+</html>

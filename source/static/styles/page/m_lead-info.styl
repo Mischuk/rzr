@@ -1,0 +1,69 @@
+.m_lead-info
+  p
+    margin-top 0
+  .table
+    @media screen and (max-width: 992px)
+      width 300px
+      margin-left auto
+    @media screen and (max-width: 767px)
+      width 100%
+      margin 0 auto
+    .title
+      helios()
+      font-size 17px
+      color $blue
+      text-align center
+      text-transform uppercase
+      @media screen and (max-width: 767px)
+        br
+          display none
+  .list
+    margin-top 10px
+    .item
+      clearfix()
+      margin-bottom 2px
+      width 296px
+      margin-left auto
+      margin-right auto
+      @media screen and (max-width: 767px)
+        width 100%
+      &:hover
+        .step, .place
+          background $red
+      .step, .date, .place
+        anim()
+        float left
+        height 35px
+        line-height 35px
+        text-align center
+        border 1px solid #ced7db
+        font-size 15px
+        cursor default
+        @media screen and (max-width: 767px)
+          float none
+          display inline-block
+          vertical-align middle
+      .step, .place
+        background $blue
+        color #fff
+      .step
+        width 62px
+        @media screen and (max-width: 767px)
+          width 32%
+        @media screen and (max-width: 480px)
+          width 23%
+      .date
+        width 100px
+        margin-left 2px
+        background #f1f4f5
+        @media screen and (max-width: 767px)
+          width 32%
+        @media screen and (max-width: 480px)
+          width 29%
+      .place
+        width 130px
+        margin-left 2px
+        @media screen and (max-width: 767px)
+          width 32%
+        @media screen and (max-width: 480px)
+          width 44%

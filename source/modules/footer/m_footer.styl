@@ -1,0 +1,109 @@
+.m_footer
+  background #c7c7c7
+  padding-top 25px
+  @media screen and (max-width: 767px)
+    padding-top 10px
+  &:after
+    content ''
+    width 100%
+    height 35px
+    background url("../images/footer.png") repeat top center
+    position absolute
+    left 0
+    top -35px
+  .container
+    position relative
+    z-index 10
+  .menu
+    clearfix()
+    ul
+      float left
+      width 50%
+      &:last-child
+        padding-left 50px
+        @media screen and (max-width: 767px)
+          padding-left 10px
+      a
+        helios()
+        display inline-block
+        vertical-align middle
+        padding 5px 0
+        font-size 18px
+        line-height 1
+        color #000
+        text-decoration none
+        &:hover
+          color $blue
+  .logo
+    margin-top 10px
+    a
+      display block
+      margin 0 auto
+      width 129px
+      height 97px
+      background url("../images/logo.png") no-repeat 0 0
+      background-size contain
+      @media screen and (max-width: 767px)
+        margin-right 0
+        max-width 100%
+  .official
+    helios()
+    font-size 16px
+    br
+      @media screen and (max-width: 767px)
+        display none
+  .socials
+    clearfix()
+    font-size 18px
+    @media screen and (max-width: 767px)
+      margin 20px 0
+    .title
+      @media screen and (max-width: 767px)
+        float left
+      @media screen and (max-width: 380px)
+        float none
+    .buttons
+      cursor default
+      margin 12px 0
+      @media screen and (max-width: 767px)
+        float right
+        margin 0
+      @media screen and (max-width: 380px)
+        float none
+        margin-top 5px
+      a
+        display inline-block
+        vertical-align middle
+        margin-right 20px
+        @media screen and (max-width: 767px)
+          margin-right 10px
+        &.facebook
+          background: url('../images/sprite.png') no-repeat 0 -32px;
+          width: 12px;
+          height: 22px;
+          &:hover
+            background-position 0 0
+        &.vk
+          background: url('../images/sprite.png') no-repeat -21px -36px;
+          width: 23px;
+          height: 13px;
+          &:hover
+            background-position -21px -4px
+        &.twitter
+          background: url('../images/sprite.png') no-repeat -55px -36px;
+          width: 22px;
+          height: 18px;
+          &:hover
+            background-position -55px -4px
+        &.instagram
+          background: url('../images/sprite.png') no-repeat -86px -36px;
+          width: 19px;
+          height: 19px;
+          &:hover
+            background-position -86px -3px
+        &.youtube
+          background: url('../images/sprite.png') no-repeat -113px -36px;
+          width: 23px;
+          height: 17px;
+          &:hover
+            background-position -113px -4px

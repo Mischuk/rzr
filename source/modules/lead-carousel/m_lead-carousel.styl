@@ -1,0 +1,53 @@
+$slideHeight = 745px
+$slideSmallHeight = 545px
+$slideExtraSmallHeight = 345px
+
+.m_lead-carousel
+  position relative
+  margin-bottom 25px
+  overflow hidden
+  &:after
+    content ''
+    width 100%
+    height 34px
+    position absolute
+    left 0
+    bottom 0
+    background url("../images/carousel/texture.png") no-repeat top center
+  .lead-carousel
+    height 100%
+    width 100%
+    .slick-list,
+    .slick-track,
+    .slide
+      height 100%
+    .slick-arrow
+      position absolute
+      width 38px
+      height 71px
+      top 50%
+      margin-top -(@height/2)
+      text-indent -9999px
+      border none
+      z-index 20
+      opacity .5
+      anim()
+      &:hover
+        opacity 1
+      &.slick-next
+        background url("../images/carousel/next.png") no-repeat 0 0
+        right 30px
+        @media screen and (max-width: 767px)
+          right 15px
+      &.slick-prev
+        background url("../images/carousel/prev.png") no-repeat 0 0
+        left 30px
+        @media screen and (max-width: 767px)
+          left 15px
+    .slide
+      .image
+        width 100%
+        height 100%
+        background-repeat no-repeat
+        background-position 50%
+        background-size cover

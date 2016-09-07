@@ -1,0 +1,178 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Регистрация
+
+block content
+  .main
+    .container
+      .row
+        .col-sm-12
+          // Breadcrumbs
+          -
+            var breadcrumbs = [
+              { title: 'Регистрация на II этап RZR CAMP'}
+            ]
+          include ../modules/breadcrumbs/m_breadcrumbs
+          // Singup form
+          .m_signup
+            .page-title Регистрация на II этап RZR CAMP
+            article
+              p Друзья, 30-31 июля в Москве состоится II этап гоночной серии RZR CAMP.
+              p Объявляем регистрацию открытой!
+              p Выбирайте тип техники, на которой планируете участвовать и оставляйте свои заявки!
+              p Обращаем Ваше внимание, что стартовый номер сохраняется за участником на весь период гоночной серии.
+              p Трасса будет озвучена в ближайшее время, следите за новостями.
+              p Станьте участником RZR CAMP: будем рады видеть тех, кто участвовал в I этапе, всех, кто когда-либо принимал участие в наших гонках, а так же всех, кто хочет попробовать свои силы в борьбе за первенство и просто хорошо провести время.
+            form.steps-form
+              .remark Поля, отмеченные звездочкой, обязательны для заполнения.
+              .form-group.current
+                .group-title Выбор трассы и бронирование номера участника
+                .form-row
+                  label
+                    .label Класс<span class="required">*</span>:
+                    .input.required
+                      select
+                        option(value="" disabled selected) Выберите класс
+                        option(value="ATV") техника ATV
+                        option(value="side-by-side") техника Side-by-Side
+                .form-row
+                  label
+                    .label Желаемый номер:
+                    .input
+                      select
+                        option(disabled selected) Выберете свободный номер
+                        option 1
+                        option 2
+                        option 4
+                        option 7
+                        option 9
+                        option 12
+                        option 13
+                        option 14
+                        option 22
+                        option 23
+                        option 88
+                .form-row
+                  label
+                    .label У меня уже есть номер:
+                    .input
+                      .custom-checkbox
+                        input(id="signup-number" type="checkbox" name="signup-number")
+                        label(for="signup-number"): span
+              .form-group
+                .group-title Общие данные об участнике
+                .form-row
+                  label
+                    .label Марка<span class="required">*</span>:
+                    .input.required: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Модель<span class="required">*</span>:
+                    .input.required: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Объём мотора<span class="required">*</span>:
+                    .input.required: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Год выпуска<span class="required">*</span>:
+                    .input.required: input.text.mask-year(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Категория<span class="required">*</span>:
+                    .input.required
+                      select
+                        option(disabled selected) Выберите категорию
+                        option Категория №1
+                        option Категория №2
+                        option Категория №3
+              .form-group
+                .group-title Данные о пилоте
+                .form-row
+                  label
+                    .label Фамилия<span class="required">*</span>:
+                    .input.required: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Имя<span class="required">*</span>:
+                    .input.required: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Отчество<span class="required">*</span>:
+                    .input.required: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Дата рождения<span class="required">*</span>:
+                    .input.required: input.mask-date.text(type="text" placeholder="Пример: 01.01.1991")
+                .form-row
+                  label
+                    .label Гражданство<span class="required">*</span>:
+                    .input.required: input.text(type="text" placeholder="Пример: Россия")
+                .form-row
+                  label
+                    .label Мобильный телефон<span class="required">*</span>:
+                    .input.required: input.mask-tel.text(type="tel" placeholder="Пример: +7 (123) 456-78-90")
+                .form-row
+                  label
+                    .label Email<span class="required">*</span>:
+                    .input.required: input.text(type="email" placeholder="")
+                .form-row
+                  label
+                    .label Паспорт (серия)<span class="required">*</span>:
+                    .input.required: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Паспорт (номер)<span class="required">*</span>:
+                    .input.required: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Паспорт (дата выдачи)<span class="required">*</span>:
+                    .input.required: input.mask-date.text(type="text" placeholder="Пример: 01.01.2007")
+                .form-row
+                  label
+                    .label Паспорт (кем выдан)<span class="required">*</span>:
+                    .input.required: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Город проживания<span class="required">*</span>:
+                    .input.required: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Страховой полис (серия):
+                    .input: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Страховой полис (номер):
+                    .input: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Страховой полис (кем выдан):
+                    .input: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Страховой полис (срок действия):
+                    .input: input.text(type="text" placeholder="")
+              .form-group
+                .group-title Контакты на случай форс-мажора
+                .form-row
+                  label
+                    .label Ф.И.О.<span class="required">*</span>:
+                    .input.required: input.text(type="text" placeholder="")
+                .form-row
+                  label
+                    .label Мобильный телефон<span class="required">*</span>:
+                    .input.required: input.mask-tel.text(type="tel" placeholder="Пример: +7 (123) 456-78-90")
+                .form-row
+                  label
+                    .label Введите текст на картинке
+                    .input.captcha
+                      .captcha-image
+                      .captcha-input
+                        input.text(type="text", placeholder="")
+                .form-row
+                  .attention Заполняя данную форму, Вы соглашаетесь на обработку персональных данных.
+              .form-control
+                a(href="#").blue-btn.hidden.control-prev Назад
+                a(href="#").blue-btn.control-next Далее
+                button(type="submit").hidden.submit.blue-btn Отправить

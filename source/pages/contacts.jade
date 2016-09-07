@@ -1,0 +1,50 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Контакты
+
+block content
+  .main
+    .container
+      .row
+        .col-sm-12
+          // Breadcrumbs
+          -
+            var breadcrumbs = [
+              { title: 'Контакты'}
+            ]
+          include ../modules/breadcrumbs/m_breadcrumbs
+          // Contacts form
+          .m_contacts
+            .page-title Контакты
+            article
+              p Тел.: (812) 449-14-30;
+              p E-mail: development@brandt.spb.ru
+              br
+              p Если у вас есть вопрос, предложение или комментарий о  мероприятии, пожалуйста, напишите нам:
+            form
+              .form-row
+                label
+                  .label ФИО:
+                  .input: input.text(type="text" placeholder="")
+              .form-row
+                label
+                  .label Телефон*:
+                  .input: input.mask-tel.text(type="tel" placeholder="Пример: +7 (123) 456-78-90")
+              .form-row
+                label
+                  .label Email:
+                  .input: input.text(type="email" placeholder="")
+              .form-row
+                label
+                  .label Сообщение:
+                  .input.large: textarea.textarea(placeholder="")
+              .form-row
+                label
+                  .label.large Введите текст на картинке
+                  .input.captcha
+                    .captcha-image
+                    .captcha-input
+                      input.text(type="text", placeholder="")
+              .form-row
+                button(type="submit").submit.blue-btn Отправить

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+</html>
+
+<head>
+	<title>RZR Camp</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="msapplication-tap-highlight" content="no">
+	<style>
+		body {
+			font-family: 'PT Sans', sans-serif;
+			font-size: 16px;
+		}
+		
+		h2 {
+			font-weight: normal;
+			cursor: default;
+		}
+		
+		ul {
+			margin: 0;
+			padding-left: 0;
+			margin-left: 20px;
+			overflow: hidden;
+		}
+		
+		li {
+			list-style: none;
+		}
+		
+		a {
+			font-size: 1.1em;
+			text-decoration: none;
+			color: #41b7d8;
+			margin-bottom: 5px;
+			display: inline-block;
+			vertical-align: middle;
+			position: relative;
+		}
+		
+		a:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 1px;
+			background: rgba(0, 0, 0, .1);
+		}
+		
+		a:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 1px;
+			background: #41b7d8;
+			left: -100%;
+			transition: left .25s ease-out;
+		}
+		
+		a:hover:after {
+			left: 0;
+			transition: left .25s ease-in;
+		}
+		
+		a:active {
+			color: #e53b2c;
+		}
+		
+		a:active:after {
+			background: #e53b2c;
+		}
+		
+		@media (max-width: 768px) {
+			a {
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+			a:after,
+			a:before {
+				bottom: 4px;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<h1>RZR Camp</h1>
+	<ul>
+		<li>
+			<a href="home.html">Главная</a>
+		</li>
+		<li>
+			<a href="steps.html">Этапы</a>
+		</li>
+		<li>
+			<a href="signup.html">Регистрация</a>
+		</li>
+		<li>
+			<a href="signup2.html">Регистрация (поэтапно)</a>
+		</li>
+		<li>
+			<a href="news.html">Новости</a>
+		</li>
+		<li>
+			<a href="news-inner.html">Новость</a>
+		</li>
+		<li>
+			<a href="partners.html">Партнеры</a>
+		</li>
+		<li>
+			<a href="gallery.html">Галерея</a>
+		</li>
+		<li>
+			<a href="gallery-video.html">Галерея - Видео</a>
+		</li>
+		<li>
+			<a href="gallery-images.html">Галерея - Фото</a>
+		</li>
+		<li>
+			<a href="contacts.html">Контакты</a>
+		</li>
+		<li>
+			<a href="forum.html">Форум</a>
+		</li>
+		<li>
+			<a href="forum-post.html">Форум - Пост</a>
+		</li>
+	</ul>
+</body>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<title>Главная</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-tap-highlight" content="no">
+		<link type="image/x-icon" href="favicon.ico" rel="icon">
+		<link href="assets/stylesheets/plugins.min.css" rel="stylesheet">
+		<link href="assets/stylesheets/app.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- Layout-->
+		<div class="background-layout"></div>
+		<!-- Modals-->
+		<div class="zoom-anim-dialog mfp-hide modal" id="small-dialog">
+			<div class="title">Чтобы оставить комментарий, авторизуйтесь через соц. сети</div>
+			<div class="buttons">
+				<div class="vk">
+					<a class="login-modal" href="#"></a>
+				</div>
+				<div class="fb">
+					<a class="login-modal" href="#"></a>
+				</div>
+				<div class="ok">
+					<a class="login-modal" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<a class="popup-with-zoom-anim" id="second-step" href="#small-dialog-second"></a>
+		<div class="zoom-anim-dialog mfp-hide modal" id="small-dialog-second">
+			<div class="title">Авторизация</div>
+			<form id="auth-form">
+				<label>
+					<span class="label">Логин
+						<span class="required">*</span>:</span>
+					<div class="input">
+						<input class="text" type="text" placeholder required>
+					</div>
+				</label>
+				<label>
+					<span class="label">Пароль
+						<span class="required">*</span>:</span>
+					<div class="input">
+						<input class="text" type="password" placeholder required>
+					</div>
+				</label>
+				<div class="submit">
+					<button type="submit">Войти</button>
+				</div>
+			</form>
+		</div>
+		<a class="popup-with-zoom-anim" id="third-step" href="#small-dialog-success"></a>
+		<div class="zoom-anim-dialog mfp-hide modal" id="small-dialog-success">
+			<div class="title">Спасибо!</div>
+			<div class="paragraph">Вы успешно прошли авторизацию. Теперь вы можете оставлять комментарии, делиться вашими идеями и создавать темы на нашем форуме.</div>
+			<div class="submit">
+				<button class="close-modal" type="button">ОК</button>
+			</div>
+		</div>
+		<!-- end Modals-->
+		<!-- Header-->
+		<header class="m_header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-3">
+						<div class="logo">
+							<a href="#"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="mobile-menu-trigger">
+							<span></span>
+						</div>
+						<div class="singin">
+							<a class="popup-with-zoom-anim" href="#small-dialog">Войти</a>
+						</div>
+						<div class="socials">
+							<div class="buttons">
+								<a class="facebook" href="#"></a>
+								<a class="vk" href="#"></a>
+								<a class="twitter" href="#"></a>
+								<a class="instagram" href="#"></a>
+								<a class="youtube" href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="menu">
+							<li>
+								<a href="#">RZR Camp 2016</a>
+							</li>
+							<li>
+								<a href="#">Новости</a>
+							</li>
+							<li>
+								<a href="#">Галерея</a>
+							</li>
+							<li>
+								<a href="#">История</a>
+							</li>
+							<li>
+								<a href="#">Партнеры</a>
+							</li>
+							<li>
+								<a href="#">Форум</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+							<li class="signup">
+								<a href="#">Зарегистрироваться на II этап</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="m_lead-carousel">
+				<div class="lead-carousel">
+					<div class="slide">
+						<div class="image" style="background-image: url('assets/images/carousel/1.jpg')"></div>
+					</div>
+					<div class="slide">
+						<div class="image" style="background-image: url('assets/images/carousel/2.jpg')"></div>
+					</div>
+					<div class="slide">
+						<div class="image" style="background-image: url('assets/images/carousel/3.jpg')"></div>
+					</div>
+					<div class="slide">
+						<div class="image" style="background-image: url('assets/images/carousel/4.jpg')"></div>
+					</div>
+					<div class="slide">
+						<div class="image" style="background-image: url('assets/images/carousel/5.jpg')"></div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="m_lead-info">
+							<div class="row">
+								<div class="col-md-8 col-sm-7">
+									<p>Гонки RZR CAMP - ежегодные соревнования, ведущие свою историю с 2008 г.
+										<br>Цель соревнований – развитие и популяризация квадроциклетного движения в России.
+										<br>За эти годы в разы увеличилось количество участников и болельщиков, расширилась география проведения, вырос бюджет и призовой фонд. В 2016 году призовой фонд составит более 5 000 000 рублей.</p>
+									<p>В 2016 году RZR CAMP пройдет в 3-х городах России:</p>
+								</div>
+								<div class="col-md-4 col-sm-5">
+									<div class="table">
+										<div class="title">всероссийская гоночная серия на квадроциклах и мотовездеходах rzr camp 2016</div>
+										<div class="list">
+											<div class="item">
+												<div class="step">I ЭТАП</div>
+												<div class="date">28-29 мая</div>
+												<div class="place">Москва</div>
+											</div>
+											<div class="item">
+												<div class="step">II ЭТАП</div>
+												<div class="date">30-31 июля</div>
+												<div class="place">Москва</div>
+											</div>
+											<div class="item">
+												<div class="step">III ЭТАП</div>
+												<div class="date"></div>
+												<div class="place">Санкт-Петербург</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="m_lead-news">
+							<div class="section-heading">Новости</div>
+							<div class="list equal-columns">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="m_item">
+											<div class="image">
+												<a href="#" style="background-image: url('assets/images/item/1.jpg')"></a>
+											</div>
+											<div class="date">01. 07. 2016</div>
+											<div class="title">
+												<a href="#">Indian мотоцикл</a>
+											</div>
+											<div class="desc">Мотоцикл готов выполнить любое ваше желание - только прикажите.</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="m_item">
+											<div class="image">
+												<a href="#" style="background-image: url('assets/images/item/2.jpg')"></a>
+											</div>
+											<div class="date">01. 07. 2016</div>
+											<div class="title">
+												<a href="#">Квадроцикл Polaris Sportsman Touring XP 1000</a>
+											</div>
+											<div class="desc">— один из самых комфортных квадроциклов на сегодняшний день!</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="m_item">
+											<div class="image">
+												<a href="#" style="background-image: url('assets/images/item/3.jpg')"></a>
+											</div>
+											<div class="date">01. 07. 2016</div>
+											<div class="title">
+												<a href="#">Мотовездеход Polaris Ranger ETX</a>
+											</div>
+											<div class="desc">Новинка 2015 года — экономичный мотовездеход Ranger ETX.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="m_all-items">
+								<a href="#">Посмотреть все новости ></a>
+							</div>
+						</div>
+						<div class="m_lead-images">
+							<div class="section-heading">Фото</div>
+							<div class="list equal-columns">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="m_item">
+											<div class="image">
+												<a href="#" style="background-image: url('assets/images/item/4.jpg')"></a>
+											</div>
+											<div class="desc">RZR CAMP 2016, Москва 28-29 мая, ATV </div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="m_item">
+											<div class="image">
+												<a href="#" style="background-image: url('assets/images/item/5.jpg')"></a>
+											</div>
+											<div class="desc">RZR CAMP 2016, Москва 28-29 мая, Side-by-Side</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="m_item">
+											<div class="image">
+												<a href="#" style="background-image: url('assets/images/item/6.jpg')"></a>
+											</div>
+											<div class="desc">RZR CAMP 2016, Москва 28-29 мая, ATV </div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="m_all-items">
+								<a href="#">Посмотреть все фото ></a>
+							</div>
+						</div>
+						<div class="m_lead-videos">
+							<div class="section-heading">Видео</div>
+							<div class="video">
+								<iframe width="950" src="https://www.youtube.com/embed/9epiMk1xvwg?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" height="540" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="m_all-items">
+								<a href="#">Посмотреть все видео ></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer-->
+		<footer class="m_footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-8">
+						<div class="menu">
+							<ul>
+								<li>
+									<a href="#">RZR Camp 2016</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+								<li>
+									<a href="#">Галерея</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="#">История</a>
+								</li>
+								<li>
+									<a href="#">Партнеры</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+								<li>
+									<a href="#">Форум</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-4">
+						<div class="logo">
+							<a href="#"></a>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<div class="socials">
+							<div class="title">Мы в социальных сетях</div>
+							<div class="buttons">
+								<a class="facebook" href="#"></a>
+								<a class="vk" href="#"></a>
+								<a class="twitter" href="#"></a>
+								<a class="instagram" href="#"></a>
+								<a class="youtube" href="#"></a>
+							</div>
+						</div>
+						<div class="official">Brandt официальныцй дилер
+							<br>Polaris, KLIM, Indian, Victory</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- JS-->
+		<script src="assets/javascripts/jquery.min.js"></script>
+		<script src="assets/javascripts/plugins.min.js"></script>
+		<script src="assets/javascripts/app.min.js"></script>
+	</body>
+
+</html>

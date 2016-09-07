@@ -1,0 +1,192 @@
+// Mobile burger button
+.mobile-menu-trigger
+  display none
+  position absolute
+  right 15px
+  top 50%
+  width 32px
+  height 22px
+  margin-top -(@height/2)
+  cursor pointer
+  @media screen and (max-width: 767px)
+    display block
+  &:after,
+  &:before,
+  span
+    anim()
+    content ''
+    position absolute
+    left 0
+    width 100%
+    height 3px
+    background #000
+  &:before
+    top 0
+  &:after
+    bottom 0
+  span
+    top 50%
+    margin-top -1.5px
+  &.open
+    span
+      opacity 0
+      transform translateX(-5px)
+    &:after
+      transform: rotate(135deg) translate(-7px, 7px)
+    &:before
+      transform: rotate(-135deg) translate(-6px, -6px)
+#second-step,
+#third-step,
+.ya-share2__item_service_collections
+  display none !important
+.m_paginations
+  cursor default
+  margin-bottom 30px
+  ul
+    @media screen and (max-width: 568px)
+      display none
+    &.compact
+      display none
+      @media screen and (max-width: 568px)
+        display block
+        text-align center
+
+
+  li
+    display inline-block
+    vertical-align middle
+    a
+      display inline-block
+      vertical-align middle
+      padding 2px
+      font-size 14px
+      text-decoration none
+      @media screen and (max-width: 568px)
+        padding 7px
+    &.current a,
+    &:hover a
+      color #000
+
+.blue-btn
+  anim()
+  display block
+  background $blue
+  color #fff
+  height 30px
+  line-height 30px
+  border none
+  border-radius 4px
+  font-size 14px
+  width 120px
+  &:hover
+    background $blue - 20%
+
+.lg-fullscreen.lg-icon,
+#lg-download
+  display none !important
+
+.lg-actions .lg-next,
+.lg-actions .lg-prev
+  width 38px
+  height 71px
+  margin-top -(@height/2)
+  padding 0
+  opacity .5
+  &:hover
+    opacity 1
+.lg-actions .lg-next
+  &:before
+    content ""
+    background url("../images/carousel/next.png") no-repeat 0 0
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+.lg-actions .lg-prev
+  &:after
+    content ""
+  &:before
+    content ""
+    background url("../images/carousel/prev.png") no-repeat 0 0
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+.lg-outer .lg-video-cont
+  max-width 70% !important
+.lg-backdrop.in
+  opacity 0.9
+.lg-sub-html
+  clearfix()
+  .socials
+    float right
+    font-size 18px
+    .title, .buttons
+      display inline-block
+      vertical-align middle
+      @media screen and (max-width: 640px)
+        display block
+    .title
+      margin-right 10px
+    .buttons
+      cursor default
+      margin 12px 0
+      @media screen and (max-width: 640px)
+        margin-top 5px
+        margin-bottom 5px
+      a
+        display inline-block
+        vertical-align middle
+        margin-right 20px
+        @media screen and (max-width: 767px)
+          margin-right 10px
+        &.facebook
+          background: url('../images/sprite.png') no-repeat 0 -32px;
+          width: 12px;
+          height: 22px;
+          &:hover
+            background-position 0 0
+        &.vk
+          background: url('../images/sprite.png') no-repeat -21px -36px;
+          width: 23px;
+          height: 13px;
+          &:hover
+            background-position -21px -4px
+        &.twitter
+          background: url('../images/sprite.png') no-repeat -55px -36px;
+          width: 22px;
+          height: 18px;
+          &:hover
+            background-position -55px -4px
+        &.instagram
+          background: url('../images/sprite.png') no-repeat -86px -36px;
+          width: 19px;
+          height: 19px;
+          &:hover
+            background-position -86px -3px
+        &.youtube
+          background: url('../images/sprite.png') no-repeat -113px -36px;
+          width: 23px;
+          height: 17px;
+          &:hover
+            background-position -113px -4px
+  .share
+    float left
+    margin-top 12px
+    @media screen and (max-width: 640px)
+      margin-top 0
+    > span,
+    > span + div
+      display inline-block
+      vertical-align middle
+      @media screen and (max-width: 640px)
+        display block
+    > span
+      @media screen and (max-width: 640px)
+        margin-bottom 10px
+    > span + div
+      margin-left 5px
+      @media screen and (max-width: 640px)
+        margin-left 0

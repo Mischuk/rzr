@@ -1,0 +1,43 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Этапы
+
+block content
+  .main
+    .container
+      .row
+        .col-sm-12
+          // Breadcrumbs
+          -
+            var breadcrumbs = [
+              { title: 'RZR Camp 2016'},
+              { title: 'I этап, Москва'},
+              { title: 'Трасса для I этапа RZR CAMP-2016'}
+            ]
+          include ../modules/breadcrumbs/m_breadcrumbs
+          // Trace
+          .m_article
+            .lead-image(style="background-image: url('assets/images/race.jpg')")
+            .info
+              .row
+                .col-sm-8
+                  article
+                    h2 Траса для I этапа RZR CAMP-2016
+                    p Определена трасса для 1 этапа RZR CAMP-2016, который будет проходит 28-29 мая 2016 г. Трасса находится на территории бывшего карьера в деревне Вельяминово.
+                    p Деревня Вельяминово, Истринского района Московской области, расположена на правом берегу реки Истры, в 1 км южнее города Истры.
+                    p Трасса очень интересная и сложная.  Ждем Вас на соревнованиях!
+                    p Координаты: <br><br><span class="blue">55.878526, 36.856712</span>
+                .col-sm-4
+                  .links
+                    .title I ЭТАП, Москва
+                    ul
+                      li: a(href="#") Регистрация
+                      li: a(href="#") Регламент RZR CAMP
+                      li: a(href="#") Участники
+                      li: a(href="#") Трасса
+                      li: a(href="#") Проживание
+                      li: a(href="#") Страхование
+                      li: a(href="#") Протокол гонки
+                      li: a(href="#") Победители
+                      li: a(href="#") Лучшие моменты

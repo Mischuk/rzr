@@ -1,0 +1,50 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Галерея (Видео)
+
+block content
+  .main
+    .container
+      .row
+        .col-sm-12
+          // Breadcrumbs
+          -
+            var breadcrumbs = [
+              { title: 'Галерея'},
+              { title: 'Видеогалерея'},
+              { title: 'RZR CAMP 2016 I этап Москва, 28-29 мая'}
+            ]
+          include ../modules/breadcrumbs/m_breadcrumbs
+          // Gallery
+          .m_gallery
+            .page-title Видеогалерея
+            .gallery-title II этап Москва, 30-31 июля
+
+
+            .list-video#lightgallery
+              .item
+                a(href="https://www.youtube.com/watch?v=meBbDqAXago")
+                  .image(style="background-image: url('assets/images/gallery/1.png')")
+                  .title RZR CAMP 2013 MOSCOW
+              .item
+                a(href="https://www.youtube.com/watch?v=meBbDqAXago")
+                  .image(style="background-image: url('assets/images/gallery/2.png')")
+                  .title RZR CAMP 2013 MOSCOW
+              .item
+                a(href="https://www.youtube.com/watch?v=meBbDqAXago")
+                  .image(style="background-image: url('assets/images/gallery/2.png')")
+                  .title RZR CAMP 2013 MOSCOW RZR CAMP 2013 MOSCOW
+              .item
+                a(href="https://www.youtube.com/watch?v=meBbDqAXago")
+                  .image(style="background-image: url('assets/images/gallery/1.png')")
+                  .title RZR CAMP 2013 MOSCOW
+              .item
+                a(href="https://www.youtube.com/watch?v=meBbDqAXago")
+                  .image(style="background-image: url('assets/images/gallery/2.png')")
+                  .title RZR CAMP 2013 MOSCOW
+              .item
+                a(href="https://www.youtube.com/watch?v=meBbDqAXago")
+                  .image(style="background-image: url('assets/images/gallery/2.png')")
+                  .title RZR CAMP 2013 MOSCOW RZR CAMP 2013 MOSCOW
+

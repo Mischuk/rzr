@@ -1,0 +1,72 @@
+/*!=========================
+      Base grid styles
+==========================*/
+// $wrapper = 980px
+$wrapper = 1170px
+$footer = 170px
+$footerSmall = 230px
+$footerExtraSmall = 280px
+html
+  position relative
+  min-height 100%
+body
+  myriad()
+  font-size 17px
+  line-height 1.2
+  color #000
+  background #f6f6f6
+  margin-bottom $footer + 35
+  @media screen and (max-width: 767px)
+    margin-bottom $footerSmall + 35
+  @media screen and (max-width: 400px)
+    margin-bottom $footerExtraSmall + 35
+.container
+  width auto
+  // max-width 1170px
+  max-width 1400px
+.m_footer
+  height $footer
+  width 100%
+  position absolute
+  bottom 0
+  @media screen and (max-width: 767px)
+    height $footerSmall
+  @media screen and (max-width: 400px)
+    height $footerExtraSmall
+.wrapper
+  clearfix()
+  position relative
+  width $wrapper
+  height 100%
+  padding-left 15px
+  padding-right 15px
+  margin-left auto
+  margin-right auto
+.equal-columns
+  .col-sm-4
+    margin-bottom 30px
+    &:nth-child(3n+1)
+      clear left
+
+.background-layout
+  anim()
+  position absolute
+  left 0
+  top 0
+  width 100%
+  height 100%
+  background rgba(0,0,0,.1)
+  opacity 0
+  &.show
+    opacity 1
+    background rgba(0,0,0,.8)
+    z-index 100
+
+.m_lead-news,
+.m_lead-images,
+.m_lead-videos
+  position relative
+
+.m_lead-videos
+  @media screen and (max-width: 767px)
+    margin-bottom 30px

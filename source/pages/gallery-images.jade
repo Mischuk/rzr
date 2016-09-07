@@ -1,0 +1,60 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Галерея (Фото)
+
+block content
+  .main
+    .container
+      .row
+        .col-sm-12
+          // Breadcrumbs
+          -
+            var breadcrumbs = [
+              { title: 'Галерея'},
+              { title: 'Фотогалерея'},
+              { title: 'RZR CAMP 2016 I этап Москва, 28-29 мая, Side-by-Side'}
+            ]
+          include ../modules/breadcrumbs/m_breadcrumbs
+          // Блок «Поделиться» для соц. кнопок в галерее
+          // https://tech.yandex.ru/share/
+          script(src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js")
+          script(src="//yastatic.net/share2/share.js")
+          // Gallery
+          .m_gallery
+            form.m_search-page
+              input.text(type="text", placeholder="Поиск по номеру")
+              button(type="submit").submit
+            .page-title Фотогалерея
+            .gallery-title RZR CAMP 2016 I этап Москва, 28-29 мая, Side-by-Side
+            #caption(style="display: none")
+              .share
+                span Поделиться:
+                div(class="ya-share2" data-services="vkontakte,facebook,twitter" data-counter="")
+              .socials
+                .title Мы в соц. сетях:
+                .buttons
+                  a(href="#").facebook
+                  a(href="#").vk
+                  a(href="#").twitter
+                  a(href="#").instagram
+                  a(href="#").youtube
+            .list-images#lightgallery
+              .item: a(href="assets/images/gallery/1.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/1.png')")
+              .item: a(href="assets/images/gallery/2.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/1.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/1.png')")
+              .item: a(href="assets/images/gallery/3.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/3.png')")
+              .item: a(href="assets/images/gallery/2.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/1.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/1.png')")
+              .item: a(href="assets/images/gallery/2.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/3.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/3.png')")
+              .item: a(href="assets/images/gallery/2.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/3.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/3.png')")
+              .item: a(href="assets/images/gallery/1.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/1.png')")
+              .item: a(href="assets/images/gallery/2.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/3.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/3.png')")
+              .item: a(href="assets/images/gallery/2.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/3.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/3.png')")
+              .item: a(href="assets/images/gallery/1.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/1.png')")
+              .item: a(href="assets/images/gallery/2.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/2.png')")
+              .item: a(href="assets/images/gallery/1.png" data-sub-html="#caption"): .image(style="background-image: url('assets/images/gallery/1.png')")

@@ -1,0 +1,279 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Форум
+
+block content
+  .main
+    .container
+      .row
+        .col-sm-12
+          // Breadcrumbs
+          -
+            var breadcrumbs = [
+              { title: 'Форум'}
+            ]
+          include ../modules/breadcrumbs/m_breadcrumbs
+          // Forum
+          .m_forum
+            form.m_search-page
+              input.text(type="text", placeholder="Поиск")
+              button(type="submit").submit
+            .page-title Форум
+            .forum-wrapper
+              table
+                tr
+                  th Конференции
+                  th Темы
+                  th Сообщения
+                  th Последнее сообщение
+                tr
+                  td
+                    .conf
+                      .conf-normal: a(href="#") 1-ый Отборочны й Этап Чемпионата России и кубок Автополе по трофи на квадроциклах
+                      .large-hidden
+                        .themes Темы: 45
+                        .messages Сообщения: 1 899
+                        .latest
+                          .label Последнее:
+                          .post: a(href="#") Миниснегоход Турист
+                        .bottom
+                          .username: a(href="#") Владимир 45
+                          .post-date Сегодня, в 19:51
+                  td: span.themes 45
+                  td: span.messages 1 831
+                  td
+                    .latest
+                      span.label Последнее:
+                      a(href="#").post Миниснегоход Турист
+                      a(href="#").username Владимир 45
+                      span.post-date Сегодня, в 19:51
+                tr
+                  td
+                    .conf
+                      .conf-normal: a(href="#") RZR Camp 2016
+                      .large-hidden
+                        .themes Темы: 45
+                        .messages Сообщения: 1 899
+                        .latest
+                          .label Последнее:
+                          .post: a(href="#") Миниснегоход Турист
+                        .bottom
+                          .username: a(href="#") Владимир 45
+                          .post-date Сегодня, в 19:51
+                  td: span.themes 45
+                  td: span.messages 1 831
+                  td
+                    .latest
+                      span.label Последнее:
+                      a(href="#").post Миниснегоход Турист
+                      a(href="#").username Владимир 45
+                      span.post-date Сегодня, в 19:51
+                tr
+                  td
+                    .conf
+                      .conf-normal: a(href="#") Квадромарафон Северо-Западное кольцо на кубок Автополе 5-6 сентября Мотоазарт
+                      .large-hidden
+                        .themes Темы: 45
+                        .messages Сообщения: 1 899
+                        .latest
+                          .label Последнее:
+                          .post: a(href="#") Миниснегоход Турист
+                        .bottom
+                          .username: a(href="#") Владимир 45
+                          .post-date Сегодня, в 19:51
+                  td: span.themes 45
+                  td: span.messages 1 831
+                  td
+                    .latest
+                      span.label Последнее:
+                      a(href="#").post Миниснегоход Турист
+                      a(href="#").username Владимир 45
+                      span.post-date Сегодня, в 19:51
+                tr
+                  td
+                    .conf
+                      .conf-normal: a(href="#") Супер гонка на квадроциклах и сайдах "Квадромарафон Северозападное кольцо"
+                      .large-hidden
+                        .themes Темы: 45
+                        .messages Сообщения: 1 899
+                        .latest
+                          .label Последнее:
+                          .post: a(href="#") Миниснегоход Турист
+                        .bottom
+                          .username: a(href="#") Владимир 45
+                          .post-date Сегодня, в 19:51
+                  td: span.themes 45
+                  td: span.messages 1 831
+                  td
+                    .latest
+                      span.label Последнее:
+                      a(href="#").post Миниснегоход Турист
+                      a(href="#").username Владимир 45
+                      span.post-date Сегодня, в 19:51
+                tr
+                  td
+                    .conf
+                      .conf-normal: a(href="#") ATV Team CUP 2014 (Санкт-Петербург)
+                      .large-hidden
+                        .themes Темы: 45
+                        .messages Сообщения: 1 899
+                        .latest
+                          .label Последнее:
+                          .post: a(href="#") Миниснегоход Турист
+                        .bottom
+                          .username: a(href="#") Владимир 45
+                          .post-date Сегодня, в 19:51
+                  td: span.themes 45
+                  td: span.messages 1 831
+                  td
+                    .latest
+                      span.label Последнее:
+                      a(href="#").post Миниснегоход Турист
+                      a(href="#").username Владимир 45
+                      span.post-date Сегодня, в 19:51
+                tr
+                  td
+                    .conf
+                      .conf-normal: a(href="#") 1-ый Отборочны й Этап Чемпионата России и кубок Автополе по трофи на квадроциклах
+                      .large-hidden
+                        .themes Темы: 45
+                        .messages Сообщения: 1 899
+                        .latest
+                          .label Последнее:
+                          .post: a(href="#") Миниснегоход Турист
+                        .bottom
+                          .username: a(href="#") Владимир 45
+                          .post-date Сегодня, в 19:51
+                  td: span.themes 45
+                  td: span.messages 1 831
+                  td
+                    .latest
+                      span.label Последнее:
+                      a(href="#").post Миниснегоход Турист
+                      a(href="#").username Владимир 45
+                      span.post-date Сегодня, в 19:51
+                tr
+                  td
+                    .conf
+                      .conf-normal: a(href="#") RZR CAMP 2016
+                      .large-hidden
+                        .themes Темы: 45
+                        .messages Сообщения: 1 899
+                        .latest
+                          .label Последнее:
+                          .post: a(href="#") Миниснегоход Турист
+                        .bottom
+                          .username: a(href="#") Владимир 45
+                          .post-date Сегодня, в 19:51
+                  td: span.themes 45
+                  td: span.messages 1 831
+                  td
+                    .latest
+                      span.label Последнее:
+                      a(href="#").post Миниснегоход Турист
+                      a(href="#").username Владимир 45
+                      span.post-date Сегодня, в 19:51
+                tr
+                  td
+                    .conf
+                      .conf-normal: a(href="#") Квадромарафон Северо-Западное кольцо на кубок Автополе 5-6 сентября Мотоазарт
+                      .large-hidden
+                        .themes Темы: 45
+                        .messages Сообщения: 1 899
+                        .latest
+                          .label Последнее:
+                          .post: a(href="#") Миниснегоход Турист
+                        .bottom
+                          .username: a(href="#") Владимир 45
+                          .post-date Сегодня, в 19:51
+                  td: span.themes 45
+                  td: span.messages 1 831
+                  td
+                    .latest
+                      span.label Последнее:
+                      a(href="#").post Миниснегоход Турист
+                      a(href="#").username Владимир 45
+                      span.post-date Сегодня, в 19:51
+                tr
+                  td
+                    .conf
+                      .conf-normal: a(href="#") Супер гонка на квадроциклах и сайдах "Квадромарафон Северозападное кольцо"
+                      .large-hidden
+                        .themes Темы: 45
+                        .messages Сообщения: 1 899
+                        .latest
+                          .label Последнее:
+                          .post: a(href="#") Миниснегоход Турист
+                        .bottom
+                          .username: a(href="#") Владимир 45
+                          .post-date Сегодня, в 19:51
+                  td: span.themes 45
+                  td: span.messages 1 831
+                  td
+                    .latest
+                      span.label Последнее:
+                      a(href="#").post Миниснегоход Турист
+                      a(href="#").username Владимир 45
+                      span.post-date Сегодня, в 19:51
+                tr
+                  td
+                    .conf
+                      .conf-normal: a(href="#") ATV Team CUP 2014 (Санкт-Петербург)
+                      .large-hidden
+                        .themes Темы: 45
+                        .messages Сообщения: 1 899
+                        .latest
+                          .label Последнее:
+                          .post: a(href="#") Миниснегоход Турист
+                        .bottom
+                          .username: a(href="#") Владимир 45
+                          .post-date Сегодня, в 19:51
+                  td: span.themes 45
+                  td: span.messages 1 831
+                  td
+                    .latest
+                      span.label Последнее:
+                      a(href="#").post Миниснегоход Турист
+                      a(href="#").username Владимир 45
+                      span.post-date Сегодня, в 19:51
+            // Paginations
+            .m_paginations
+              ul.compact
+                li: a(href="#") ←
+                li: a(href="#") 1
+                li: a(href="#") 2
+                li: a(href="#") 3
+                li: a(href="#") 4
+                li.current: a(href="#") 5
+                li: a(href="#") 6
+                li: a(href="#") 7
+                li: a(href="#") 8
+                li: a(href="#") 9
+                li: a(href="#") →
+
+              ul
+                li: a(href="#") 1
+                li: a(href="#") 2
+                li: a(href="#") 3
+                li: a(href="#") 4
+                li: a(href="#") 5
+                li.current: a(href="#") 6
+                li: a(href="#") 7
+                li: a(href="#") 8
+                li: a(href="#") 9
+                li: a(href="#") 10
+                li: a(href="#") 11
+                li: a(href="#") 12
+                li: a(href="#") 13
+                li: a(href="#") 14
+                li: a(href="#") 15
+                li: a(href="#") 16
+                li: a(href="#") 17
+                li: a(href="#") 18
+                li: a(href="#") 19
+                li: a(href="#") 20
+                li: a(href="#") 21
+                li: a(href="#") 22
+                li: a(href="#") 23
+                li: a(href="#") 24

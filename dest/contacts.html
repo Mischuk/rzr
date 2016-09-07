@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<title>Контакты</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-tap-highlight" content="no">
+		<link type="image/x-icon" href="favicon.ico" rel="icon">
+		<link href="assets/stylesheets/plugins.min.css" rel="stylesheet">
+		<link href="assets/stylesheets/app.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- Layout-->
+		<div class="background-layout"></div>
+		<!-- Modals-->
+		<div class="zoom-anim-dialog mfp-hide modal" id="small-dialog">
+			<div class="title">Чтобы оставить комментарий, авторизуйтесь через соц. сети</div>
+			<div class="buttons">
+				<div class="vk">
+					<a class="login-modal" href="#"></a>
+				</div>
+				<div class="fb">
+					<a class="login-modal" href="#"></a>
+				</div>
+				<div class="ok">
+					<a class="login-modal" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<a class="popup-with-zoom-anim" id="second-step" href="#small-dialog-second"></a>
+		<div class="zoom-anim-dialog mfp-hide modal" id="small-dialog-second">
+			<div class="title">Авторизация</div>
+			<form id="auth-form">
+				<label>
+					<span class="label">Логин
+						<span class="required">*</span>:</span>
+					<div class="input">
+						<input class="text" type="text" placeholder required>
+					</div>
+				</label>
+				<label>
+					<span class="label">Пароль
+						<span class="required">*</span>:</span>
+					<div class="input">
+						<input class="text" type="password" placeholder required>
+					</div>
+				</label>
+				<div class="submit">
+					<button type="submit">Войти</button>
+				</div>
+			</form>
+		</div>
+		<a class="popup-with-zoom-anim" id="third-step" href="#small-dialog-success"></a>
+		<div class="zoom-anim-dialog mfp-hide modal" id="small-dialog-success">
+			<div class="title">Спасибо!</div>
+			<div class="paragraph">Вы успешно прошли авторизацию. Теперь вы можете оставлять комментарии, делиться вашими идеями и создавать темы на нашем форуме.</div>
+			<div class="submit">
+				<button class="close-modal" type="button">ОК</button>
+			</div>
+		</div>
+		<!-- end Modals-->
+		<!-- Header-->
+		<header class="m_header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-3">
+						<div class="logo">
+							<a href="#"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="mobile-menu-trigger">
+							<span></span>
+						</div>
+						<div class="singin">
+							<a class="popup-with-zoom-anim" href="#small-dialog">Войти</a>
+						</div>
+						<div class="socials">
+							<div class="buttons">
+								<a class="facebook" href="#"></a>
+								<a class="vk" href="#"></a>
+								<a class="twitter" href="#"></a>
+								<a class="instagram" href="#"></a>
+								<a class="youtube" href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="menu">
+							<li>
+								<a href="#">RZR Camp 2016</a>
+							</li>
+							<li>
+								<a href="#">Новости</a>
+							</li>
+							<li>
+								<a href="#">Галерея</a>
+							</li>
+							<li>
+								<a href="#">История</a>
+							</li>
+							<li>
+								<a href="#">Партнеры</a>
+							</li>
+							<li>
+								<a href="#">Форум</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+							<li class="signup">
+								<a href="#">Зарегистрироваться на II этап</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<!-- Breadcrumbs-->
+						<div class="m_breadcrumbs">
+							<ul>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</div>
+						<!-- Contacts form-->
+						<div class="m_contacts">
+							<div class="page-title">Контакты</div>
+							<article>
+								<p>Тел.: (812) 449-14-30;</p>
+								<p>E-mail: development@brandt.spb.ru</p>
+								<br>
+								<p>Если у вас есть вопрос, предложение или комментарий о мероприятии, пожалуйста, напишите нам:</p>
+							</article>
+							<form>
+								<div class="form-row">
+									<label>
+										<div class="label">ФИО:</div>
+										<div class="input">
+											<input class="text" type="text" placeholder>
+										</div>
+									</label>
+								</div>
+								<div class="form-row">
+									<label>
+										<div class="label">Телефон*:</div>
+										<div class="input">
+											<input class="mask-tel text" type="tel" placeholder="Пример: +7 (123) 456-78-90">
+										</div>
+									</label>
+								</div>
+								<div class="form-row">
+									<label>
+										<div class="label">Email:</div>
+										<div class="input">
+											<input class="text" type="email" placeholder>
+										</div>
+									</label>
+								</div>
+								<div class="form-row">
+									<label>
+										<div class="label">Сообщение:</div>
+										<div class="input large">
+											<textarea class="textarea" placeholder></textarea>
+										</div>
+									</label>
+								</div>
+								<div class="form-row">
+									<label>
+										<div class="label large">Введите текст на картинке</div>
+										<div class="input captcha">
+											<div class="captcha-image"></div>
+											<div class="captcha-input">
+												<input class="text" type="text" placeholder>
+											</div>
+										</div>
+									</label>
+								</div>
+								<div class="form-row">
+									<button class="submit blue-btn" type="submit">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer-->
+		<footer class="m_footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-8">
+						<div class="menu">
+							<ul>
+								<li>
+									<a href="#">RZR Camp 2016</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+								<li>
+									<a href="#">Галерея</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="#">История</a>
+								</li>
+								<li>
+									<a href="#">Партнеры</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+								<li>
+									<a href="#">Форум</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-4">
+						<div class="logo">
+							<a href="#"></a>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<div class="socials">
+							<div class="title">Мы в социальных сетях</div>
+							<div class="buttons">
+								<a class="facebook" href="#"></a>
+								<a class="vk" href="#"></a>
+								<a class="twitter" href="#"></a>
+								<a class="instagram" href="#"></a>
+								<a class="youtube" href="#"></a>
+							</div>
+						</div>
+						<div class="official">Brandt официальныцй дилер
+							<br>Polaris, KLIM, Indian, Victory</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- JS-->
+		<script src="assets/javascripts/jquery.min.js"></script>
+		<script src="assets/javascripts/plugins.min.js"></script>
+		<script src="assets/javascripts/app.min.js"></script>
+	</body>
+
+</html>

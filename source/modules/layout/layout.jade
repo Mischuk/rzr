@@ -1,0 +1,46 @@
+doctype html
+html(lang="ru")
+  head
+    block title
+      title Default title
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="msapplication-tap-highlight" content="no")
+    link(rel="icon" href="favicon.ico" type="image/x-icon")
+    link(rel="stylesheet" href="assets/stylesheets/plugins.min.css")
+    link(rel="stylesheet" href="assets/stylesheets/app.min.css")
+  body
+    // Layout
+    .background-layout
+    // Modals
+    #small-dialog.zoom-anim-dialog.mfp-hide.modal
+      .title Чтобы оставить комментарий, авторизуйтесь через соц. сети
+      .buttons
+        .vk: a(href="#").login-modal
+        .fb: a(href="#").login-modal
+        .ok: a(href="#").login-modal
+    a(href="#small-dialog-second").popup-with-zoom-anim#second-step
+    #small-dialog-second.zoom-anim-dialog.mfp-hide.modal
+      .title Авторизация
+      form(id="auth-form")
+        label
+          span.label Логин <span class="required">*</span>:
+          .input: input.text(type="text", placeholder="" required)
+        label
+          span.label Пароль <span class="required">*</span>:
+          .input: input.text(type="password", placeholder="" required)
+        .submit: button(type="submit") Войти
+    a(href="#small-dialog-success").popup-with-zoom-anim#third-step
+    #small-dialog-success.zoom-anim-dialog.mfp-hide.modal
+      .title Спасибо!
+      .paragraph Вы успешно прошли авторизацию. Теперь вы можете оставлять комментарии, делиться вашими идеями и создавать темы на нашем форуме.
+      .submit: button(type="button").close-modal ОК
+    // end Modals
+    include ../header/m_header
+    block content
+    include ../footer/m_footer
+    // JS
+    script(src='assets/javascripts/jquery.min.js')
+    script(src='assets/javascripts/plugins.min.js')
+    script(src='assets/javascripts/app.min.js')

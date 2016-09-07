@@ -1,0 +1,123 @@
+.m_signup
+  .remark
+    color $red
+    font-size 16px
+    margin-bottom 10px
+    margin-top 30px
+  .required
+    color $red
+  .attention
+    font-size 15px
+  .group-title
+    helios()
+    color #244486
+    font-size 20px
+    text-transform uppercase
+    margin-bottom 15px
+  .form-row
+    margin-bottom 10px
+    @media screen and (max-width: 420px)
+      margin-bottom 20px
+    &:last-child
+      margin-bottom 30px
+    > label
+      display block
+      width 100%
+  form
+    width 540px
+    @media screen and (max-width: 568px)
+      width 100%
+    label
+      clearfix()
+      > .label,
+      > .input
+        float left
+        width 50%
+        height 30px
+        line-height 30px
+        @media screen and (max-width: 568px)
+          height auto
+        @media screen and (max-width: 420px)
+          width 100%
+      > .label
+        font-size 16px
+        @media screen and (max-width: 568px)
+          line-height 1
+
+      .captcha
+        height auto
+        .captcha-image
+          border 1px solid #84838a
+          width 120px
+          height 30px
+          margin-bottom 5px
+        .captcha-input
+          input
+            width 120px
+    input
+      myriad()
+      width 100%
+      height 30px
+      line-height 30px
+      border 1px solid #84838a
+      background #fff
+      padding-left 10px
+      padding-right 10px
+      font-size 16px
+    .selectric-items
+      border-color #84838a
+      margin-top -1px
+      li
+        font-size 16px
+    .selectric
+      border-color #84838a
+      .label
+        myriad()
+        height 30px
+        line-height 30px
+        margin 0
+        padding-left 10px
+        padding-right 30px
+        color #333
+        font-size 16px
+        background #fff
+      .button
+        width 30px
+        height 30px
+        color #000
+        &:after
+          border-top-color #000
+    .submit
+      margin-left auto
+      margin-right auto
+      margin-top 15px
+    &.steps-form
+      margin-bottom 35px
+      .form-control
+        text-align center
+        cursor default
+        .control-prev,
+        .control-next
+          display inline-block
+          vertical-align middle
+          text-decoration none
+          &:hover, &:focus
+            color #fff
+        .submit
+          display inline-block
+          vertical-align middle
+          margin-top 0
+      .form-group
+        display none
+        &.current
+          display block
+        input
+          color #333
+        .input.error
+          .selectric
+            border-color $red
+          input
+            border-color $red
+
+
+

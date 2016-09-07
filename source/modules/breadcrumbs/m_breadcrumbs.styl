@@ -1,0 +1,17 @@
+.m_breadcrumbs
+  margin-top 10px
+  margin-bottom 10px
+  ul
+    cursor default
+  li
+    display inline-block
+    vertical-align middle
+    a
+      text-decoration none
+      color #89a0cf
+      font-size 15px
+      &:hover
+        color $blue
+    & + li:before
+      content "/"
+      color #89a0cf

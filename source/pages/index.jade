@@ -1,0 +1,49 @@
+- var project = "RZR Camp"
+
+-
+  var list = [
+    { title: 'Главная', url: 'home.html' },
+    { title: 'Этапы', url: 'steps.html' },
+    { title: 'Регистрация', url: 'signup.html' },
+    { title: 'Регистрация (поэтапно)', url: 'signup2.html' },
+    { title: 'Новости', url: 'news.html' },
+    { title: 'Новость', url: 'news-inner.html' },
+    { title: 'Партнеры', url: 'partners.html' },
+    { title: 'Галерея', url: 'gallery.html' },
+    { title: 'Галерея - Видео', url: 'gallery-video.html' },
+    { title: 'Галерея - Фото', url: 'gallery-images.html' },
+    { title: 'Контакты', url: 'contacts.html' },
+    { title: 'Форум', url: 'forum.html' },
+    { title: 'Форум - Пост', url: 'forum-post.html' }
+  ]
+
+doctype html
+html(lang="ru")
+head
+  title= project
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+  meta(name="msapplication-tap-highlight" content="no")
+  style.
+    body {font-family:  'PT Sans',  sans-serif;font-size:  16px;}
+    h2 {font-weight:  normal;cursor:  default;}
+    ul {margin: 0;padding-left: 0;margin-left:  20px;overflow:  hidden;}
+    li {list-style:  none;}
+    a {font-size:  1.1em;text-decoration:  none;color:  #41b7d8;margin-bottom:  5px;display:  inline-block;vertical-align:  middle;position:  relative;}
+    a:before {content:  '';position:  absolute;left:  0;bottom:  0;width:  100%;height:  1px;background:  rgba(0, 0, 0, .1);}
+    a:after {content:  '';position:  absolute;left:  0;bottom:  0;width:  100%;height:  1px;background:  #41b7d8;left:  -100%;transition:  left .25s ease-out;}
+    a:hover:after {left:  0;transition:  left .25s ease-in;}
+    a:active {color:  #e53b2c;}
+    a:active:after {background:  #e53b2c;}
+    @media (max-width: 768px) {
+      a {padding-top:  5px;padding-bottom:  5px;}
+      a:after,  a:before {bottom:  4px;}
+    }
+
+body
+  h1= project
+  ul
+    -each post in list
+      li
+         a(href =post.url) #{post.title}

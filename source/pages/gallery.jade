@@ -1,0 +1,53 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Галерея
+
+block content
+  .main
+    .container
+      .row
+        .col-sm-12
+          // Breadcrumbs
+          -
+            var breadcrumbs = [
+              { title: 'Галерея'}
+            ]
+          include ../modules/breadcrumbs/m_breadcrumbs
+          // Gallery
+          .m_gallery
+            form.m_search-page
+              input.text(type="text", placeholder="Поиск по номеру")
+              button(type="submit").submit
+            .page-title.red RZR CAMP 2016
+            .list
+              .group
+                .group-title II этап Москва, 30-31 июля
+                .items
+                  .item
+                    .image: a(href="#" style="background-image: url('assets/images/gallery/1.png')")
+                    .title: a(href="#") Side-by-Side
+                  .item
+                    .image: a(href="#" style="background-image: url('assets/images/gallery/2.png')")
+                    .title: a(href="#") ATV
+                  .item
+                    .image: a(href="#" style="background-image: url('assets/images/gallery/3.png')")
+                    .title: a(href="#") Участники
+                  .item
+                    .image.video: a(href="#" style="background-image: url('assets/images/gallery/3.png')")
+                    .title: a(href="#") Видео
+              .group
+                .group-title I этап Москва, 21-22 мая
+                .items
+                  .item
+                    .image: a(href="#" style="background-image: url('assets/images/gallery/1.png')")
+                    .title: a(href="#") Side-by-Side
+                  .item
+                    .image: a(href="#" style="background-image: url('assets/images/gallery/2.png')")
+                    .title: a(href="#") ATV
+                  .item
+                    .image: a(href="#" style="background-image: url('assets/images/gallery/3.png')")
+                    .title: a(href="#") Участники
+                  .item
+                    .image.video: a(href="#" style="background-image: url('assets/images/gallery/3.png')")
+                    .title: a(href="#") Видео

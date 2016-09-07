@@ -1,0 +1,37 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Партнеры
+
+block content
+  .main
+    .container
+      .row
+        .col-sm-12
+          // Breadcrumbs
+          -
+            var breadcrumbs = [
+              { title: 'Партнеры'}
+            ]
+          include ../modules/breadcrumbs/m_breadcrumbs
+          // News
+          -
+            var news = [
+              { image: "assets/images/item/1.jpg", date: '01. 07. 2016', title: 'Название компании', desc: 'Мотоцикл готов выполнить любое ваше желание - только прикажите.' },
+              { image: "assets/images/item/2.jpg", date: '01. 07. 2016', title: 'Название компании', desc: '— один из самых комфортных квадроциклов на сегодняшний день!' },
+              { image: "assets/images/item/3.jpg", date: '01. 07. 2016', title: 'Название компании', desc: 'Новинка 2015 года — экономичный мотовездеход Ranger ETX.' },
+              { image: "assets/images/item/4.jpg", date: '01. 07. 2016', title: 'Название компании', desc: 'Новинка 2015 года — экономичный мотовездеход Ranger ETX.' },
+              { image: "assets/images/item/5.jpg", date: '01. 07. 2016', title: 'Название компании', desc: 'Новинка 2015 года — экономичный мотовездеход Ranger ETX.' },
+              { image: "assets/images/item/6.jpg", date: '01. 07. 2016', title: 'Название компании', desc: 'Новинка 2015 года — экономичный мотовездеход Ranger ETX.' },
+              { image: "assets/images/item/7.jpg", date: '01. 07. 2016', title: 'Название компании', desc: 'Новинка 2015 года — экономичный мотовездеход Ranger ETX.' },
+              { image: "assets/images/item/8.jpg", date: '01. 07. 2016', title: 'Название компании', desc: 'Новинка 2015 года — экономичный мотовездеход Ranger ETX.' },
+              { image: "assets/images/item/9.jpg", date: '01. 07. 2016', title: 'Название компании', desc: 'Новинка 2015 года — экономичный мотовездеход Ranger ETX.' },
+            ]
+          - var full = true;
+          .m_lead-news
+            .section-heading Партнеры
+            .list.equal-columns
+              .row
+                -each post in news
+                  .col-sm-4
+                    include ../modules/item/m_item

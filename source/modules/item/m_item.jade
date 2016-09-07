@@ -1,0 +1,11 @@
+.m_item
+  if full
+    .image
+      a(href="#" style="background-image: url('#{post.image}')")
+    .date #{post.date}
+    .title: a(href="#") #{post.title}
+    .desc #{post.desc}
+  else
+    .image
+      a(href="#" style="background-image: url('#{post.image}')")
+    .desc #{post.desc}

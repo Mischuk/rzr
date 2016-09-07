@@ -1,0 +1,77 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Главная
+
+block content
+  .main
+    include ../modules/lead-carousel/m_lead-carousel
+    .container
+      .row
+        .col-sm-12
+          //- Info
+          .m_lead-info
+            .row
+              .col-md-8.col-sm-7
+                p Гонки RZR CAMP - ежегодные соревнования, ведущие свою историю с 2008 г.<br>Цель соревнований – развитие и популяризация квадроциклетного движения в России.<br>За эти годы в разы увеличилось количество участников и болельщиков, расширилась география проведения, вырос бюджет и призовой фонд.  В 2016 году призовой фонд составит  более  5 000 000 рублей.
+                p В 2016 году RZR CAMP пройдет в 3-х городах России:
+              .col-md-4.col-sm-5
+                .table
+                  .title всероссийская гоночная серия на квадроциклах и мотовездеходах rzr camp 2016
+                  .list
+                    .item
+                      .step I ЭТАП
+                      .date 28-29 мая
+                      .place Москва
+                    .item
+                      .step II ЭТАП
+                      .date 30-31 июля
+                      .place Москва
+                    .item
+                      .step III ЭТАП
+                      .date
+                      .place Санкт-Петербург
+          //- News
+          -
+            var news = [
+              { image: "assets/images/item/1.jpg", date: '01. 07. 2016', title: 'Indian мотоцикл', desc: 'Мотоцикл готов выполнить любое ваше желание - только прикажите.' },
+              { image: "assets/images/item/2.jpg", date: '01. 07. 2016', title: 'Квадроцикл Polaris Sportsman Touring XP 1000', desc: '— один из самых комфортных квадроциклов на сегодняшний день!' },
+              { image: "assets/images/item/3.jpg", date: '01. 07. 2016', title: 'Мотовездеход Polaris Ranger ETX', desc: 'Новинка 2015 года — экономичный мотовездеход Ranger ETX.' }
+            ]
+          - var full = true;
+          .m_lead-news
+            .section-heading Новости
+            .list.equal-columns
+              .row
+                -each post in news
+                  .col-sm-4
+                    include ../modules/item/m_item
+            .m_all-items
+              a(href="#") Посмотреть все новости >
+          //- Images
+          -
+            var images = [
+              { image: "assets/images/item/4.jpg", desc: 'RZR CAMP 2016, Москва 28-29 мая, ATV ' },
+              { image: "assets/images/item/5.jpg", desc: 'RZR CAMP 2016, Москва 28-29 мая, Side-by-Side' },
+              { image: "assets/images/item/6.jpg", desc: 'RZR CAMP 2016, Москва 28-29 мая, ATV ' }
+            ]
+          - var full = false;
+          .m_lead-images
+            .section-heading Фото
+            .list.equal-columns
+              .row
+                -each post in images
+                  .col-sm-4
+                    include ../modules/item/m_item
+            .m_all-items
+              a(href="#") Посмотреть все фото >
+          //- Videos
+          .m_lead-videos
+            .section-heading Видео
+            .video
+              iframe(width="950" height="540" src="https://www.youtube.com/embed/9epiMk1xvwg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen)
+            .m_all-items
+              a(href="#") Посмотреть все видео >
+
+
+

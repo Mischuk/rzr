@@ -1,0 +1,51 @@
+h1
+h2
+h3
+h4
+h5
+h6
+  font-family $heading-font-family
+  font-weight $heading-font-weight
+  margin 1.2em 0 0.5em
+  line-height normal
+
+
+h1
+  font-size 2.6em
+
+h2
+  font-size 2.3em
+
+h3
+  font-size 2em
+
+h4
+  font-size 1.8em
+
+h5
+  font-size 1.4em
+
+h6
+  font-size 1.2em
+
+a
+  color $link-color
+  transition color 0.2s ease 0s
+  text-decoration underline
+
+  &:visited
+    color $link-visited-color
+
+  &:hover
+    text-decoration none
+    color #000
+
+.section-heading
+  helios()
+  font-size 35px
+  line-height 1
+  color $blue
+  margin-bottom 10px
+  margin-top 20px
+  @media screen and (max-width: 380px)
+    margin-bottom 30px

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<title>Регистрация</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="msapplication-tap-highlight" content="no">
+		<link type="image/x-icon" href="favicon.ico" rel="icon">
+		<link href="assets/stylesheets/plugins.min.css" rel="stylesheet">
+		<link href="assets/stylesheets/app.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- Layout-->
+		<div class="background-layout"></div>
+		<!-- Modals-->
+		<div class="zoom-anim-dialog mfp-hide modal" id="small-dialog">
+			<div class="title">Чтобы оставить комментарий, авторизуйтесь через соц. сети</div>
+			<div class="buttons">
+				<div class="vk">
+					<a class="login-modal" href="#"></a>
+				</div>
+				<div class="fb">
+					<a class="login-modal" href="#"></a>
+				</div>
+				<div class="ok">
+					<a class="login-modal" href="#"></a>
+				</div>
+			</div>
+		</div>
+		<a class="popup-with-zoom-anim" id="second-step" href="#small-dialog-second"></a>
+		<div class="zoom-anim-dialog mfp-hide modal" id="small-dialog-second">
+			<div class="title">Авторизация</div>
+			<form id="auth-form">
+				<label>
+					<span class="label">Логин
+						<span class="required">*</span>:</span>
+					<div class="input">
+						<input class="text" type="text" placeholder required>
+					</div>
+				</label>
+				<label>
+					<span class="label">Пароль
+						<span class="required">*</span>:</span>
+					<div class="input">
+						<input class="text" type="password" placeholder required>
+					</div>
+				</label>
+				<div class="submit">
+					<button type="submit">Войти</button>
+				</div>
+			</form>
+		</div>
+		<a class="popup-with-zoom-anim" id="third-step" href="#small-dialog-success"></a>
+		<div class="zoom-anim-dialog mfp-hide modal" id="small-dialog-success">
+			<div class="title">Спасибо!</div>
+			<div class="paragraph">Вы успешно прошли авторизацию. Теперь вы можете оставлять комментарии, делиться вашими идеями и создавать темы на нашем форуме.</div>
+			<div class="submit">
+				<button class="close-modal" type="button">ОК</button>
+			</div>
+		</div>
+		<!-- end Modals-->
+		<!-- Header-->
+		<header class="m_header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-3">
+						<div class="logo">
+							<a href="#"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<div class="mobile-menu-trigger">
+							<span></span>
+						</div>
+						<div class="singin">
+							<a class="popup-with-zoom-anim" href="#small-dialog">Войти</a>
+						</div>
+						<div class="socials">
+							<div class="buttons">
+								<a class="facebook" href="#"></a>
+								<a class="vk" href="#"></a>
+								<a class="twitter" href="#"></a>
+								<a class="instagram" href="#"></a>
+								<a class="youtube" href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="menu">
+							<li>
+								<a href="#">RZR Camp 2016</a>
+							</li>
+							<li>
+								<a href="#">Новости</a>
+							</li>
+							<li>
+								<a href="#">Галерея</a>
+							</li>
+							<li>
+								<a href="#">История</a>
+							</li>
+							<li>
+								<a href="#">Партнеры</a>
+							</li>
+							<li>
+								<a href="#">Форум</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+							<li class="signup">
+								<a href="#">Зарегистрироваться на II этап</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<!-- Breadcrumbs-->
+						<div class="m_breadcrumbs">
+							<ul>
+								<li>
+									<a href="#">Регистрация на II этап RZR CAMP</a>
+								</li>
+							</ul>
+						</div>
+						<!-- Singup form-->
+						<div class="m_signup">
+							<div class="page-title">Регистрация на II этап RZR CAMP</div>
+							<article>
+								<p>Друзья, 30-31 июля в Москве состоится II этап гоночной серии RZR CAMP.</p>
+								<p>Объявляем регистрацию открытой!</p>
+								<p>Выбирайте тип техники, на которой планируете участвовать и оставляйте свои заявки!</p>
+								<p>Обращаем Ваше внимание, что стартовый номер сохраняется за участником на весь период гоночной серии.</p>
+								<p>Трасса будет озвучена в ближайшее время, следите за новостями.</p>
+								<p>Станьте участником RZR CAMP: будем рады видеть тех, кто участвовал в I этапе, всех, кто когда-либо принимал участие в наших гонках, а так же всех, кто хочет попробовать свои силы в борьбе за первенство и просто хорошо провести время.</p>
+							</article>
+							<form class="steps-form">
+								<div class="remark">Поля, отмеченные звездочкой, обязательны для заполнения.</div>
+								<div class="form-group current">
+									<div class="group-title">Выбор трассы и бронирование номера участника</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Класс
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<select>
+													<option value disabled selected>Выберите класс</option>
+													<option value="ATV">техника ATV</option>
+													<option value="side-by-side">техника Side-by-Side</option>
+												</select>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Желаемый номер:</div>
+											<div class="input">
+												<select>
+													<option disabled selected>Выберете свободный номер</option>
+													<option>1</option>
+													<option>2</option>
+													<option>4</option>
+													<option>7</option>
+													<option>9</option>
+													<option>12</option>
+													<option>13</option>
+													<option>14</option>
+													<option>22</option>
+													<option>23</option>
+													<option>88</option>
+												</select>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">У меня уже есть номер:</div>
+											<div class="input">
+												<div class="custom-checkbox">
+													<input id="signup-number" name="signup-number" type="checkbox">
+													<label for="signup-number">
+														<span></span>
+													</label>
+												</div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="group-title">Общие данные об участнике</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Марка
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Модель
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Объём мотора
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Год выпуска
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text mask-year" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Категория
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<select>
+													<option disabled selected>Выберите категорию</option>
+													<option>Категория №1</option>
+													<option>Категория №2</option>
+													<option>Категория №3</option>
+												</select>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="group-title">Данные о пилоте</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Фамилия
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Имя
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Отчество
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Дата рождения
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="mask-date text" type="text" placeholder="Пример: 01.01.1991">
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Гражданство
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="text" placeholder="Пример: Россия">
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Мобильный телефон
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="mask-tel text" type="tel" placeholder="Пример: +7 (123) 456-78-90">
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Email
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="email" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Паспорт (серия)
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Паспорт (номер)
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Паспорт (дата выдачи)
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="mask-date text" type="text" placeholder="Пример: 01.01.2007">
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Паспорт (кем выдан)
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Город проживания
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Страховой полис (серия):</div>
+											<div class="input">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Страховой полис (номер):</div>
+											<div class="input">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Страховой полис (кем выдан):</div>
+											<div class="input">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Страховой полис (срок действия):</div>
+											<div class="input">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="group-title">Контакты на случай форс-мажора</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Ф.И.О.
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="text" type="text" placeholder>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Мобильный телефон
+												<span class="required">*</span>:</div>
+											<div class="input required">
+												<input class="mask-tel text" type="tel" placeholder="Пример: +7 (123) 456-78-90">
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<label>
+											<div class="label">Введите текст на картинке</div>
+											<div class="input captcha">
+												<div class="captcha-image"></div>
+												<div class="captcha-input">
+													<input class="text" type="text" placeholder>
+												</div>
+											</div>
+										</label>
+									</div>
+									<div class="form-row">
+										<div class="attention">Заполняя данную форму, Вы соглашаетесь на обработку персональных данных.</div>
+									</div>
+								</div>
+								<div class="form-control">
+									<a class="blue-btn hidden control-prev" href="#">Назад</a>
+									<a class="blue-btn control-next" href="#">Далее</a>
+									<button class="hidden submit blue-btn" type="submit">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer-->
+		<footer class="m_footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-8">
+						<div class="menu">
+							<ul>
+								<li>
+									<a href="#">RZR Camp 2016</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+								<li>
+									<a href="#">Новости</a>
+								</li>
+								<li>
+									<a href="#">Галерея</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="#">История</a>
+								</li>
+								<li>
+									<a href="#">Партнеры</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+								<li>
+									<a href="#">Форум</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-4">
+						<div class="logo">
+							<a href="#"></a>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						<div class="socials">
+							<div class="title">Мы в социальных сетях</div>
+							<div class="buttons">
+								<a class="facebook" href="#"></a>
+								<a class="vk" href="#"></a>
+								<a class="twitter" href="#"></a>
+								<a class="instagram" href="#"></a>
+								<a class="youtube" href="#"></a>
+							</div>
+						</div>
+						<div class="official">Brandt официальныцй дилер
+							<br>Polaris, KLIM, Indian, Victory</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- JS-->
+		<script src="assets/javascripts/jquery.min.js"></script>
+		<script src="assets/javascripts/plugins.min.js"></script>
+		<script src="assets/javascripts/app.min.js"></script>
+	</body>
+
+</html>

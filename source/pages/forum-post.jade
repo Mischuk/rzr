@@ -1,0 +1,100 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Форум - Пост
+
+block content
+  .main
+    .container
+      .row
+        .col-sm-12
+          // Breadcrumbs
+          -
+            var breadcrumbs = [
+              { title: 'Форум'},
+              { title: 'RZR CAMP 2016'}
+            ]
+          include ../modules/breadcrumbs/m_breadcrumbs
+          // Forum
+          .m_forum
+            form.m_search-page
+              input.text(type="text", placeholder="Поиск")
+              button(type="submit").submit
+            .page-title Форум
+            .forum-wrapper
+              .main-posts
+                .post
+                  .image
+                    a(href="#" style="background-image: url('assets/images/forum/usericon-1.png')")
+                  .body
+                    .header
+                      .username: a(href="#") administrator
+                      .post-date Сегодня, в 19:51
+                      .rating
+                        .value.up 5
+                        .controls
+                          a(href="#").like +
+                          a(href="#").dislike &ndash;
+                    .message
+                      p 16 января компания Brandt, эксклюзивный дистрибьютор мототехники Polaris в России, провела презентацию новой гоночной серии RZR CAMP 2016 года и представила обновленный формат и основные положения серии.
+                      p.
+                        С радостью сообщаем все основные данные по соревнованиям RZR CAMP: теперь каждый из этапов будет проводится 2 дня:
+                        <br>1 день - регистрация участников, медкомиссия, тех.комиссия, брифинг, тренировочные заезды.
+                        <br>2 день - основные заезды и награждение.
+                        <br>Количество этапов RZR CAMP 2016 – 3 этапа.
+                        <br>Даты и места проведения:
+                        <br>I Этап – Москва, 21-22 мая
+                        <br>II Этап – Казань, 09-10 июля
+                        <br>III Этап – Санкт-Петербург 27-28 августа
+                      p.
+                        Классы:
+                        <br>Side-by-Side Original
+                        <br>Side-by-Side Open
+                .post
+                  .image
+                    a(href="#" style="background-image: url('assets/images/forum/usericon-2.png')")
+                  .body
+                    .header
+                      .username: a(href="#") Ivanchik45
+                      .post-date Сегодня, в 19:51
+                      .rating
+                        .value.down 5
+                        .controls
+                          a(href="#").like +
+                          a(href="#").dislike &ndash;
+                    .message
+                      p 28-29 мая в Москве состоится I этап всероссийских любительских соревнований на мотовездеходах и квадроциклах RZR CAMP.
+                      p.
+                        Организатор гонок - компания Brandt, эксклюзивный дистрибьютор мототехники Polaris в России.<br>
+                        Новый год - новое название, новый формат и новые впечатления! Мероприятие теперь будет проходить 2 дня и будет еще интереснее и насыщеннее, как для участников, так и для гостей.
+                      p Мы ожидаем гонщиков, которые у нас участвуют традиционно, новичков, кто хочет попробовать свои силы и силы своей техники и побороться за призы соревнований и всех, кто намерен хорошо провести время и понаблюдать за зрелищной гонкой.
+                .post
+                  .image
+                    a(href="#" style="background-image: url('assets/images/forum-userpic.png')")
+                  .body
+                    .header
+                      .username: a(href="#") Guest
+                      .post-date Сегодня, в 19:51
+                      .rating
+                        .value
+                        .controls
+                          a(href="#").like +
+                          a(href="#").dislike &ndash;
+                    .message
+                      p 28-29 мая в Москве состоится I этап всероссийских любительских соревнований на мотовездеходах и квадроциклах RZR CAMP.
+                      p.
+                        Организатор гонок - компания Brandt, эксклюзивный дистрибьютор мототехники Polaris в России.<br>
+                        Новый год - новое название, новый формат и новые впечатления! Мероприятие теперь будет проходить 2 дня и будет еще интереснее и насыщеннее, как для участников, так и для гостей.
+                      p Мы ожидаем гонщиков, которые у нас участвуют традиционно, новичков, кто хочет попробовать свои силы и силы своей техники и побороться за призы соревнований и всех, кто намерен хорошо провести время и понаблюдать за зрелищной гонкой.
+              .m_form-comment
+                form
+                  .title Ответить
+                  .input: textarea
+                  .submit: button(type="submit").blue-btn Отправить
+
+
+
+
+
+
+
