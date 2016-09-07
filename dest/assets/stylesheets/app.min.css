@@ -460,6 +460,12 @@ body {
 		margin-bottom: 30px;
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.main {
+		padding-top: 110px;
+	}
+}
 /* Components styles */
 .mobile-menu-trigger {
 	position: absolute;
@@ -2224,6 +2230,15 @@ a:hover {
 	background: #ffffff;
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.25);
 	box-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+
+@media screen and (min-width: 768px) {
+	.m_header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
 }
 
 .m_header.fixed {
