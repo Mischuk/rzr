@@ -2009,6 +2009,12 @@ a:hover {
 	clear: left;
 }
 
+@media screen and (min-width: 641px) {
+	.m_gallery .list-video .item:nth-child(3n+1) {
+		margin-left: 0;
+	}
+}
+
 @media screen and (max-width: 640px) {
 	.m_gallery .list-video .item:nth-child(3n+1) {
 		clear: none;
